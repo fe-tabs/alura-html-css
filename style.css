@@ -57,13 +57,16 @@ body {
 }
 
 /* INTRODUCTION */
-.introduction {
+.introduction,
+.about {
+  width: 70%;
   display: flex;
   gap: 2.4rem;
   flex-direction: column;
 }
 
-.introduction__title {
+.introduction__title,
+.about-title {
   font-size: 3.6rem;
 }
 
@@ -73,11 +76,11 @@ body {
 
 /* PICTURE */
 .picture {
-  height: 100%;
+  width: 30%;
 }
 
 .picture__image {
-  height: inherit;
+  width: 100%;
   border-radius: 0.8rem;
 }
 
@@ -110,8 +113,15 @@ body {
   display: block;
   border: 0.2rem solid var(--tertiary-color);
   border-radius: 0.8rem;
+  transition: all ease 0.3s;
 }
 
+.social-media__link:hover {
+  background-color: var(--tertiary-color);
+  color: #0c0a09;
+}
+
+/* FOOTER */
 .footer {
   background-color: var(--tertiary-color);
   color: var(--primary-color);
