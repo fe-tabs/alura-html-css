@@ -43,6 +43,7 @@ body {
 
 .header__link {
   color: var(--secondary-color);
+  font-size: 2rem;
   font-weight: 600;
 }
 
